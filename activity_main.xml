@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_steel_blue"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj pracownika"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dane Pracownika"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etImie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Imię"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etNazwisko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nazwisko"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stanowisko"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spStanowisko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generowanie hasła"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etDlugosc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ile znaków?"
+            android:inputType="number"
+            android:text="12"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:id="@+id/cbLitery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Małe i wielkie litery"
+            android:checked="true"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/cbCyfry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cyfry"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/cbSpecjalne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Znaki specjalne"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnGeneruj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/steel_blue"
+            android:text="Generuj hasło"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvHaslo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:text="Wygenerowane hasło pojawi się tutaj"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textIsSelectable="true" />
+
+        <Button
+            android:id="@+id/btnZatwierdz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/steel_blue"
+            android:text="Zatwierdź"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
